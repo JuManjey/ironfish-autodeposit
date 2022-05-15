@@ -7,7 +7,6 @@ process = subprocess.Popen(bashCommand, stdout=subprocess.PIPE)
 output, error = process.communicate()
 massive2 = output.split()
 
-
 massive_of_spend_balance = ((str)(massive2[36])).strip()
 if ((str)(massive_of_spend_balance[2])) == "0":             
     print("Выход! Баланса недостаточно")
