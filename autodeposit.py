@@ -13,3 +13,6 @@ if ((str)(massive_of_spend_balance[2])) == "0":
 else:                    
     print("Выполнение операции депозита")
     bashCommand = ["yarn", "--cwd", "/root/ironfish/ironfish-cli/", "start", "deposit", "--confirm"]
+    process = subprocess.Popen(bashCommand, stdout=subprocess.PIPE)
+    output, error = process.communicate()
+    print(output)
