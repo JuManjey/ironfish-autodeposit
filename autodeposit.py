@@ -1,11 +1,6 @@
 from operator import eq
 import subprocess
 
-bashCmd = ["ls", "."]
-process = subprocess.Popen(bashCmd, stdout=subprocess.PIPE)
-output, error = process.communicate()
-massive = output.split()
-
 print("Start of work")
 bashCommand = ["yarn", "--cwd", "/root/ironfish/ironfish-cli/", "start", "accounts:balance"]
 process = subprocess.Popen(bashCommand, stdout=subprocess.PIPE)
