@@ -6,7 +6,7 @@ Create autodeposit for IronFish Node
 Cron:  
 `nano /etc/crontab`  
 Добавить:  
-`*/15 * * * * root python3 /root/ironfish-autodeposit/autodeposit.py | tee -a /root/logfile.log`  
+`*/1 * * * * root python3 /root/ironfish-autodeposit/autodeposit.py | tee -a /root/logfile.log`  
 Cron:  
 `systemctl enable cron && systemctl start cron && systemctl status cron`  
 Смотреть:  
