@@ -8,6 +8,6 @@ Cron:
 Добавить:  
 `*/3 * * * * root python3 /root/ironfish-autodeposit/autodeposit.py | tee -a /root/logfile.log`  
 Cron:  
-`systemctl enable cron && systemctl status cron && systemctl start cron`  
+`systemctl enable cron && systemctl start cron && systemctl status cron`  
 Смотреть:  
 `tail -F /root/logfile.log`  
