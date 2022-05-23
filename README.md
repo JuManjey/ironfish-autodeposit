@@ -1,4 +1,7 @@
 # ironfish-autodeposit
+ 
+ ПОМЕНЯЙТЕ CHAT-ID И API
+
 Create autodeposit for IronFish Node
 
 `git clone https://github.com/JuManjey/ironfish-autodeposit.git && cd ironfish-autodeposit && chmod +x autodeposit.py`  
