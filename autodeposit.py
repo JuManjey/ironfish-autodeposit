@@ -11,7 +11,7 @@ process = subprocess.Popen(bashCommand, stdout=subprocess.PIPE)
 output, error = process.communicate()
 massive = output.decode("utf-8")
 massive2 = massive.split()
-count = float(massive2[36])
+count = float(massive2[37])
 name_of_client = str(massive2[22])
 status = os.system('systemctl is-active --quiet service-name')
 if count > 1 and status != 0:
