@@ -5,8 +5,7 @@ import struct
 from time import sleep
 
 print("Start of work")
-bashCommand = ["yarn", "--cwd", "/root/ironfish/ironfish-cli/",
-               "start", "accounts:balance"]
+bashCommand = ["yarn", "--cwd", "/root/ironfish/ironfish-cli/", "start", "accounts:balance"]
 process = subprocess.Popen(bashCommand, stdout=subprocess.PIPE)
 output, error = process.communicate()
 massive = output.decode("utf-8")
